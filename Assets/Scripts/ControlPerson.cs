@@ -18,5 +18,13 @@ public class ControlPerson : MonoBehaviour {
 			Input.GetAxis("X"),
 			Input.GetAxis("Y"),
 			Input.GetAxis("Z"));
+		
+		if (Input.GetKeyDown(KeyCode.Space)) {
+			foreach (var rigidbody in FindObjectsOfType<Rigidbody>()) {
+				if (rigidbody.gameObject != person.gameObject) {
+					rigidbody.AddExplosionForce(2000f, person.transform.position, 15f, 12f);
+				}
+			}
+		}
 	}
 }
