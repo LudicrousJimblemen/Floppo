@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour {
 	public Transform Target;
-	public int FollowFrames = 20;
+	public int FollowFrames = 8;
 	public float SmoothTime = 0.5f;
 	
 	private Vector3[] positions;
