@@ -6,12 +6,59 @@ ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Armature
+    100004: Center
+    100006: Chest
+    100008: Head
+    100010: Left_Foot
+    100012: Left_Foreleg
+    100014: Left_Leg
+    100016: Neck
+    100018: Person
+    100020: Right_Foot
+    100022: Right_Foreleg
+    100024: Right_Leg
+    100026: Root
+    100028: Waist
+    100030: Lower_Body
+    100032: Upper_Body
+    100034: Lower_Body_Mesh
+    100036: Upper_Body_Mesh
     400000: //RootNode
+    400002: Armature
+    400004: Center
+    400006: Chest
+    400008: Head
+    400010: Left_Foot
+    400012: Left_Foreleg
+    400014: Left_Leg
+    400016: Neck
+    400018: Person
+    400020: Right_Foot
+    400022: Right_Foreleg
+    400024: Right_Leg
+    400026: Root
+    400028: Waist
+    400030: Lower_Body
+    400032: Upper_Body
+    400034: Lower_Body_Mesh
+    400036: Upper_Body_Mesh
     2300000: //RootNode
+    2300002: Person
+    2300004: Lower_Body_Mesh
+    2300006: Upper_Body_Mesh
     3300000: //RootNode
+    3300002: Person
+    3300004: Lower_Body_Mesh
+    3300006: Upper_Body_Mesh
     4300000: Person
+    4300002: Lower_Body_Mesh
+    4300004: Upper_Body_Mesh
     7400000: Default Take
     9500000: //RootNode
+    13700000: Person
+    13700002: Lower_Body_Mesh
+    13700004: Upper_Body_Mesh
   materials:
     importMaterials: 0
     materialName: 0
@@ -28,7 +75,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -70,13 +117,13 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName: 
+    rootMotionBoneName: Armature
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

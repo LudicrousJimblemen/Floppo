@@ -8,23 +8,18 @@ public class ControlPerson : MonoBehaviour {
 	
 	private void Awake() {
 		person = GetComponent<Person>();
-		if (GetComponent<SkinnedMeshRenderer>()) {
-			GetComponent<SkinnedMeshRenderer>().material.color = Color.red;
+		if (GetComponentInChildren<SkinnedMeshRenderer>()) {
+			GetComponentInChildren<SkinnedMeshRenderer>().material.color = Color.red;
 		}
 	}
 	
 	private void Update() {
 		person.Act(
-			Input.GetAxis("X"),
-			Input.GetAxis("Y"),
-			Input.GetAxis("Z"));
-		
-		if (Input.GetKeyDown(KeyCode.Space)) {
-			foreach (var rigidbody in FindObjectsOfType<Rigidbody>()) {
-				if (rigidbody.gameObject != person.gameObject) {
-					rigidbody.AddExplosionForce(2000f, person.transform.position, 15f, 12f);
-				}
-			}
-		}
+			Input.GetAxis("X1"),
+			Input.GetAxis("Y1"),
+			Input.GetAxis("Z1"),
+			Input.GetAxis("X2"),
+			Input.GetAxis("Y2"),
+			Input.GetAxis("Z2"));
 	}
 }

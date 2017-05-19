@@ -9,7 +9,7 @@ public class AIControlPerson : MonoBehaviour {
 	
 	private void Awake() {
 		person = GetComponent<Person>();
-		network = new Network(2, new [] { 4, 4 }, 3);
+		network = new Network(2, new [] { 4, 4 }, 6);
 	}
 	
 	private void Update() {
@@ -17,6 +17,9 @@ public class AIControlPerson : MonoBehaviour {
 		person.Act(
 			outputs[0],
 			outputs[1],
-			outputs[2]);
+			outputs[2],
+			outputs[3],
+			outputs[4],
+			outputs[5]);
 	}
 }
